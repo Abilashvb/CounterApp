@@ -1,0 +1,43 @@
+@import "./base.css";
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+.counterHolder {
+  display: flex;
+}
+
+.counterHolder h1 {
+  font-size: 27px;
+}
+
+.counterHolder button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  align-self: center;
+  font-size: 14px;
+  line-height: 1;
+  margin: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 300;
+  padding: 5px 10px 5px 10px;
+}
